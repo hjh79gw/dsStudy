@@ -102,6 +102,7 @@ public class Omok {
     private static boolean navigate(Board b, int sr, int sc, int dr, int dc) {
         int r = sr, c = sc; // 위치
         int findO = 0, findX = 0; //  사용자/컴퓨터 연속된 돌의 개수
+        // sr 시작행 sc 시작 열 dr 행 변화량 dc 열 변화량
 
         while (0 <= r && r <= b.size - 1 && 1 <= c && c <= b.size) {  //탐색 범위 지정
             String location = b.map[r][c];

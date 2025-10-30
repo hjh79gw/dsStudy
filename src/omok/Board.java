@@ -11,7 +11,7 @@ public class Board {
         map = new String[size + 1][size + 1];
 
         for (int row = 0; row <= size; row++) {
-            map[row][0] = (row < size) ? String.valueOf(row) : "  ";
+            map[row][0] = (row < size) ? String.valueOf(row) : "  "; // (19.0) 공백
         }
 
         char ch = 'A';
@@ -48,7 +48,7 @@ public class Board {
     public void print() {
         for (int row = 0; row <= size; row++) {
             for (int col = 0; col <= size ; col++) {
-                System.out.printf("%2s", map[row][col]);
+                System.out.printf("%2s", map[row][col]);  //2칸씩 정렬
             }
             System.out.println();
         }

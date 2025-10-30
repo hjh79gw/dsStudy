@@ -28,6 +28,7 @@ public class Omok {
             board.map[row][col] = stone;
             board.print();
 
+            player = player.equals("사용자") ? "컴퓨터" : "사용자";
 
 
 

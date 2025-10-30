@@ -59,7 +59,7 @@ public class Omok {
      * scanner
      * 반복문(사용자, 컴퓨터가 한 번씩 해야 턴이 끝남)
      * 사용자 좌표 입력 (String)
-     * 내부 열 인덱스 1 ~ 19 a~s
+     * 내부 열 인덱스 1 ~ 19 (A ~ S)
      * 내부 행 인덱스 0 ~ 18
      * 사용자 /컴퓨터 턴 구분 > user.stone / computer.stone
      * board.map [row][col] = stone;
@@ -70,6 +70,7 @@ public class Omok {
 
 
     /* 승리 판정
-
+     * 모든 행 / 열 / 대각 훑기?
+     * 왼 > 오 방향으로 연속된 O OR X 탐색 + 대각?
      */
 }
